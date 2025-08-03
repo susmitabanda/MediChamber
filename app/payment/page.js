@@ -58,7 +58,7 @@ export default function PaymentPage() {
     <p className="text-gray-600 mb-6">Confirm your booking by paying ₹1000 securely through Razorpay.</p>
     <button
       onClick={loadRazorpay}
-      className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl text-lg transition-all duration-300"
+      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl text-lg transition-all duration-300"
     >
       Pay ₹1000
     </button>
