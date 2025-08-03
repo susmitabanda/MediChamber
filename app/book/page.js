@@ -121,7 +121,8 @@ const Book = () => {
     return (
         <div className="min-h-screen flex flex-col bg-gray-50 overflow-x-hidden">
             {/* Navbar */}
-            <div className="w-full h-20 bg-blue-500 text-white flex items-center justify-between shadow-lg px-4 sm:px-8">
+          <div className="w-full h-20 bg-gradient-to-r from-blue-400 to-indigo-600 text-white flex items-center justify-between shadow-lg px-4 sm:px-8">
+
                  <div className="text-2xl sm:text-3xl font-bold flex items-center cursor-pointer">
                     <img src="/stethoscope.png" className="w-10 h-10 mr-2" alt="Logo" />
                     MediChamber
@@ -139,12 +140,20 @@ const Book = () => {
             {/* Main Content */}
             <main className="flex-1 flex flex-col lg:flex-row items-center justify-center gap-10 p-4 sm:p-10">
                 {/* Doctor Image */}
-                <div className="w-full lg:w-1/3 flex items-center justify-center">
+                <div className="w-full lg:w-1/3 flex flex-col items-center justify-center border-gray-100 border-2 rounded-lg p-6 sm:p-8">
+                    <div className="bg-gray-200 rounded-lg">
+
                     <img
-                        src="/doctor.jpg"
-                        className="max-w-[300px] md:max-w-[400px] w-full object-contain"
+                        src="/doct.png"
+                        className="max-w-[400px] md:max-w-[400px] w-full object-contain "
                         alt="A friendly cartoon doctor"
                     />
+                    </div>
+                    <h4 className="mt-4 font-bold ">Dr Niladri Chatterjee </h4>
+                    <p className="text-gray-600">MBBS, MD (General Medicine)</p>
+                    <p className="text-gray-600">Specialist in General Medicine</p>
+                    <p className="text-gray-600">Experience: 10+ years</p>
+                    
                 </div>
                 
                 {/* Booking Section */}
@@ -266,7 +275,7 @@ const Book = () => {
             </main>
 
             {/* Footer */}
-            <footer className="w-full h-16 bg-blue-500 text-white flex items-center justify-between px-4 sm:px-8">
+            <footer className="w-full h-16 bg-gradient-to-r from-blue-400 to-indigo-600 text-white flex items-center justify-between px-4 sm:px-8">
                 <p className="text-lg">©{new Date().getFullYear()} MediChamber</p>
                 <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-blue-200">
                     <img src="/whatsapp.png" className="w-8 h-8" alt="WhatsApp"/>
